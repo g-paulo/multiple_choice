@@ -5,9 +5,12 @@ import java.io.*;
 import java.util.*;
 
 public class FileQAndA {
-    private final BufferedReader brQ = new BufferedReader(new FileReader("/home/shifu/Escritorio/AC/PregYResp/Preguntas.txt"));
-    private final BufferedReader brA = new BufferedReader(new FileReader("/home/shifu/Escritorio/AC/PregYResp/Respuestas.txt"));
-    private final BufferedReader brT = new BufferedReader(new FileReader("/home/shifu/Escritorio/AC/PregYResp/Correctas.txt"));
+    // Example in FileRender's parameter "/home/user/desktop/questiones.txt"
+    private final BufferedReader brQ = new BufferedReader(new FileReader(/* path for questiones */));
+    // Example in FileRender's parameter "/home/user/desktop/answers.txt"
+    private final BufferedReader brA = new BufferedReader(new FileReader(/* path for answers */));
+    // Example in FileRender's parameter "/home/user/desktop/correct_answers.txt"
+    private final BufferedReader brT = new BufferedReader(new FileReader(/* path for correct answers */));
     private final ArrayList<String> linesQ,linesA,linesT;
     private String line;
 
